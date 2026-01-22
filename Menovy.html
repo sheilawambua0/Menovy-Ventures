@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menovy Ventures</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f3ea;
+            color: #173b2a;
+        }
+
+        header {
+            background: linear-gradient(90deg, #0b3d2e, #145c43);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 { margin: 0; letter-spacing: 1px; }
+
+        nav a {
+            color: #f0f7f3;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(11,61,46,0.82), rgba(11,61,46,0.82)), url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 40px;
+            text-align: center;
+        }
+
+        .hero h2 { font-size: 44px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; opacity: 0.95; }
+
+        .section { padding: 70px 40px; }
+
+        .section h3 {
+            color: #0b3d2e;
+            font-size: 30px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .services, .values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover { transform: translateY(-6px); }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content { padding: 18px; border-top: 5px solid #6b8e23; }
+
+        .about { background: #e9e3d6; }
+
+        .values .card-content { border-top-color: #145c43; }
+
+        footer {
+            background: #0b3d2e;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        .contact p { margin: 8px 0; font-size: 16px; }
+
+        @media (max-width: 600px) {
+            .hero h2 { font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Menovy Ventures</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#values">Values</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Instant Financial Support Partner</h2>
+    <p>Linking loanees and financiers for quick, affordable financial solutions and growth.</p>
+</section>
+
+<section id="about" class="section about">
+    <h3>About Us</h3>
+    <p style="max-width:900px;margin:0 auto;text-align:center;">
+        Menovy Ventures, owned by Yvonne Mwende Wambua, provides digital and online financial services and training to clients seeking quick and reliable financial assistance. We bridge the gap between loanees and financiers, ensuring access to affordable rates, timely support, and long-term financial growth.
+    </p>
+</section>
+
+<section id="services" class="section">
+    <h3>Our Services</h3>
+    <div class="services">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c" alt="Digital finance" />
+            <div class="card-content">
+                <h4>Digital Financial Services</h4>
+                <p>Online financial assistance and solutions tailored to client needs using modern digital platforms.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1526304640581-d334cdbbf45e" alt="Financial training" />
+            <div class="card-content">
+                <h4>Financial Training</h4>
+                <p>Empowering clients with financial literacy, smart money management, and investment knowledge.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d" alt="Investment growth" />
+            <div class="card-content">
+                <h4>Loan & Financier Linkage</h4>
+                <p>Connecting loanees to trusted financiers for quick, affordable, and reliable support.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="values" class="section">
+    <h3>Our Values</h3>
+    <div class="values">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" alt="Cost effective" />
+            <div class="card-content">We strive to offer cost-effective services in a proactive way.</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d" alt="Clients value" />
+            <div class="card-content">We value our clients as key to our success and our principal focus.</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" alt="Growth" />
+            <div class="card-content">We assist clients in personal growth and financial development.</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf" alt="24/7 support" />
+            <div class="card-content">We are an instant solution to our clients' needs 24/7.</div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Professional family" />
+            <div class="card-content">Professionalism with a sense of family.</div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section about contact">
+    <h3>Contact Us</h3>
+    <p><strong>Owner:</strong> Yvonne Mwende Wambua</p>
+    <p>Email: info@menovyventures.com</p>
+    <p>Phone: +254 700 000 000</p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Menovy Ventures. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
