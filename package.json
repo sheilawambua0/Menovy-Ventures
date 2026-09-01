@@ -1,0 +1,17 @@
+{
+  "name": "menovy-loan-notify",
+  "version": "1.0.0",
+  "description": "Receives loan applications from the Menovy Ventures website and texts the details to your phone via Africa's Talking.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "africastalking": "^0.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
