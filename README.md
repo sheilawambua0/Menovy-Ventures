@@ -12,7 +12,4 @@ Visual elements representing growth, money, and investments
 
 Built using HTML and CSS
 
-How to View
 
-Open the live site here:
-👉 https://sheilawambua0.github.io/menovy-ventures
